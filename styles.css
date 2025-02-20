@@ -106,3 +106,49 @@ footer {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     margin-bottom: 15px;
 }
+.hero {
+    background: url('background.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animated Glowing Effect */
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.2), transparent);
+    animation: moveGlow 5s infinite linear;
+}
+
+@keyframes moveGlow {
+    0% { transform: translate(-50%, -50%); }
+    100% { transform: translate(50%, 50%); }
+}
+.btn:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.skill-box:hover {
+    background: #2c3e50;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
