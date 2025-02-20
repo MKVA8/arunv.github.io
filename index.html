@@ -3,58 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arun V - Cybersecurity Portfolio</title>
+    <title>Arun V | Cybersecurity Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Arun V</h1>
-        <p>Sr. Information Security Analyst | Cybersecurity Professional</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <div class="container">
+            <h1>Arun V</h1>
+            <p>Sr. Information Security Analyst | Cybersecurity Professional</p>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to My Cybersecurity Portfolio</h2>
+            <p>Protecting digital assets with expertise in SIEM, Threat Intelligence, and Cloud Security.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
     <section id="about">
-        <h2>About Me</h2>
-        <p>Dynamic Sr. Information Security Analyst at Warner Media, adept in SIEM tools, incident response, and cloud security.</p>
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Dynamic Sr. Information Security Analyst at Warner Media, specializing in SIEM tools, incident response, and cloud security.</p>
+        </div>
     </section>
 
     <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>SIEM Tools</li>
-            <li>Cloud Security</li>
-            <li>Threat Intelligence</li>
-            <li>Incident Response</li>
-            <li>Vulnerability Assessment</li>
-        </ul>
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-box">SIEM Tools</div>
+                <div class="skill-box">Cloud Security</div>
+                <div class="skill-box">Threat Intelligence</div>
+                <div class="skill-box">Incident Response</div>
+                <div class="skill-box">Vulnerability Assessment</div>
+            </div>
+        </div>
     </section>
 
     <section id="experience">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>Warner Media</h3>
-            <p>Sr. Information Security Analyst | March 2023 - Present</p>
-        </div>
-        <div class="job">
-            <h3>Truist Bank</h3>
-            <p>Information Security Analyst | Dec 2021 - March 2023</p>
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-box">
+                <h3>Warner Media</h3>
+                <p>Sr. Information Security Analyst | March 2023 - Present</p>
+            </div>
+            <div class="experience-box">
+                <h3>Truist Bank</h3>
+                <p>Information Security Analyst | Dec 2021 - March 2023</p>
+            </div>
         </div>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:mktvara@gmail.com">mktvara@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">Connect with me</a></p>
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:mktvara@gmail.com">mktvara@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">Connect with me</a></p>
+        </div>
     </section>
 
     <footer>
-        <p>© 2024 Arun V | Built with GitHub Pages</p>
+        <div class="container">
+            <p>© 2024 Arun V | Built with GitHub Pages</p>
+        </div>
     </footer>
 </body>
 </html>
