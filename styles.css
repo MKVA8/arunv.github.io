@@ -48,7 +48,7 @@ nav ul li a {
 }
 
 .hero .btn {
-    background: url('background.jpg') no-repeat center center/cover;
+    background: #3498db;
     padding: 10px 20px;
     color: white;
     text-decoration: none;
